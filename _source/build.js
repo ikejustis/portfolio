@@ -8,17 +8,22 @@ const { SITE, esc, head, nav, foot, livingSky } = require('./common');
 /* meta: role · when · what. chips: outcomes and focus, only what the case study or resume backs up. */
 const PROJECTS = [
   { key: 'healthyhand', tag: 'Startup', color: '#2E7D32', title: 'Lending a Healthy Hand: Making Health & Wellness Accessible',
-    meta: ['Design Lead', '2025 – Present', 'iOS app + partner dashboard'],
-    body: ['I lead design for HealthyHand, a mobile discovery platform that bridges the gap between health-conscious people and local wellness businesses.',
+    meta: ['Design Lead', '2025 – Present', 'iOS app, partner dashboard + backend'],
+    body: ['I lead design for HealthyHand and build it end to end, from product strategy and UX to the design system and the code behind the iOS app, partner dashboard and backend.',
       'Members find curated cafés, studios, parks and clinics through personalized onboarding and a map, and earn rewards for every visit, while small businesses get the visibility to compete and grow in their local markets.'],
     chips: ['0-to-1 product', 'Health & wellness'],
     img: 'healthyhand.webp', alt: 'HealthyHand For You and Map screens on two iPhones in front of the partner business dashboard',
     links: [['View Project', 'projects/healthyhand.html'], ['View Site', 'https://www.healthyhand.co']] },
   { key: 'paraillel', tag: 'AI startup', color: '#1E6FD9', title: 'Boosting Teacher Efficiency & Student Potential With AI-Powered Classroom Tools',
     meta: ['Lead Product Designer', '2023 – 2024', 'AI ed-tech web app'],
-    body: ['Designed the core AI-powered tools at Paraillel, an ed-tech startup focused on personalized learning, creating unique learning paths for every student while boosting teacher efficiency.'],
+    body: ['Helped take Paraillel from 0 to 1, leading product design and a team of four designers I mentored, for AI-powered classroom tools that personalize learning for students and cut teachers’ admin work.'],
     chips: ['+22% task success', '−30% user errors', '0-to-1 product'],
     video: 'paraillel.mp4', img: 'paraillel.webp', alt: 'Walkthrough of the Paraillel teacher dashboard and assignments on a laptop', links: [['View Project', 'projects/paraillel.html']] },
+  { key: 'cli', tag: 'Education & health', color: '#B5643C', title: 'UT Health’s UX Initiatives in the Education and Clinical Setting',
+    meta: ['Senior UX Designer', 'UT Health · 2024 – 2025', 'Education & clinical web'],
+    body: ['Led UX strategy, research and a WCAG 2.2 design system across two education and clinical research platforms, running workshops with 75 participants across product teams to set shared UX standards.'],
+    chips: ['+20% usability & adoption', 'WCAG 2.2 design system', 'Cross-team workshops'],
+    img: 'cli.webp', alt: 'Children’s Learning Institute website on an iMac', links: [['View Project', 'projects/cli.html']] },
   { key: 'helperbees', tag: 'Healthcare', color: '#C08A00', title: 'Supporting Senior Independence Through In-Home Care Design',
     meta: ['Lead Product Designer', 'In-home care', 'Mobile app'],
     body: ['A personalized, accessible recommendation experience that connects older adults and their families with trusted aging-in-place products, bridging payer goals with the real needs of seniors.'],
@@ -29,11 +34,6 @@ const PROJECTS = [
     body: ['A redesign of Geisinger’s website for patients seeking care across Pennsylvania: simpler navigation, better mobile usability and WCAG 2.2 accessibility, so it’s easier to find care, log in and trust the system.'],
     chips: ['WCAG 2.2', 'Mobile usability', 'Simpler navigation'],
     img: 'geisinger.webp', alt: 'Redesigned Geisinger website on a desktop monitor', links: [['View Project', 'https://ikejustis.github.io/geisinger-redesign/']] },
-  { key: 'cli', tag: 'Education & health', color: '#B5643C', title: 'UT Health’s UX Initiatives in the Education and Clinical Setting',
-    meta: ['Senior UX Designer', 'UT Health · 2024 – 2025', 'Education & clinical web'],
-    body: ['Led design and research initiatives for the CLI Engage platform, using human-centered design and testing to create accessible tools that improved engagement and satisfaction for educators and parents.'],
-    chips: ['+20% usability & adoption', 'WCAG 2.2 design system', 'Research & testing'],
-    img: 'cli.webp', alt: 'Children’s Learning Institute website on an iMac', links: [['View Project', 'projects/cli.html']] },
   { key: 'tandem', tag: 'Mental health', color: '#5F63B8', title: 'Designing Patient-Centered Mental Health Experiences',
     meta: ['UX research & strategy', 'Mental health', 'Website'],
     body: ['Redesigned Tandem’s digital experience, leading user research, UX strategy and accessibility work for a patient-centered platform that improved engagement and streamlined mental healthcare operations.'],
@@ -95,7 +95,7 @@ ${nav({ base: '', current: 'home' })}
   ${more()}
   <section class="about" aria-labelledby="about-h">
     <h2 id="about-h" class="sec">About</h2>
-    <p>I’m a design thinker and product builder with 5+ years across healthcare, education and consumer products. I start with empathy and context, understanding the behavior and unspoken pain points behind how people use technology, and build thoughtful, scalable, inclusive products that improve people’s well-being. Music, animation and short films keep my thinking creative.</p>
+    <p>I’m a design thinker and product builder with 6 years across healthcare, education and consumer products. I start with empathy and context, understanding the behavior and unspoken pain points behind how people use technology, and build thoughtful, scalable, inclusive products that improve people’s well-being. Music, animation and short films keep my thinking creative.</p>
     <a class="btn" href="about.html">More about me</a>
   </section>
 </main>

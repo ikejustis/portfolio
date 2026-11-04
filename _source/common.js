@@ -12,9 +12,9 @@ const SITE = {
 const CASES = [
   ['healthyhand', 'Healthy Hand'],
   ['paraillel', 'Paraillel'],
+  ['cli', 'UT Health X CLI'],
   ['helper-bees', 'The Helper Bees'],
   ['geisinger', 'Geisinger', 'https://ikejustis.github.io/geisinger-redesign/'],
-  ['cli', 'UT Health X CLI'],
   ['tandem', 'Tandem'],
   ['tudum', 'Netflix Tudum Case Study'],
 ];

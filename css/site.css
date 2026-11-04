@@ -396,3 +396,74 @@ img.mv { height: auto; }
 @media (max-width: 900px) { .row.feature .txt { grid-template-columns: 1fr; gap: 0; } .row.feature .pic { order: 0; } }
 /* Walkthrough videos have a near-white background; blend it into the page so no grey box shows. */
 .row video.shot, .mini video.shot { mix-blend-mode: multiply; }
+
+
+/* ── Case studies v2: role & ownership, two-sided problems, flows, outcomes, phase labels ── */
+/* Numbered section labels: the 7-part structure */
+.cs .eyebrow .n, .num-eyebrow .n { display: inline-grid; place-items: center; min-width: 30px; height: 22px; margin-right: 6px; padding: 0 6px; border-radius: 6px; background: var(--c); color: #fff; font-size: 12px; letter-spacing: .04em; }
+.num-eyebrow { margin: 0 0 16px; font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+
+/* Two sides of a problem */
+.two-sided { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 18px 0 8px; }
+.two-sided article { background: var(--soft); border-radius: 18px; padding: 22px 24px; }
+.two-sided h3 { margin: 0 0 6px; color: var(--c); font-size: 19px; }
+.two-sided p { margin: 0; font-size: 16.5px; }
+
+/* My role & ownership */
+.own { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 8px; }
+.own > div { border: 1px solid var(--line); border-top: 4px solid var(--c); border-radius: 16px; padding: 20px 22px; }
+.own h3 { margin: 0 0 10px; font-size: 14px; letter-spacing: .12em; text-transform: uppercase; color: var(--c); }
+.own ul { margin: 0; padding-left: 18px; font-size: 15.5px; display: grid; gap: 7px; }
+
+/* Numbered flow / loop */
+.flowx { list-style: none; margin: 14px 0 8px; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; counter-reset: f; }
+.flowx li { position: relative; background: color-mix(in srgb, var(--c) 7%, #fff); border-radius: 16px; padding: 18px 18px 20px; }
+.flowx li:not(:last-child)::after { content: '→'; position: absolute; right: -12px; top: 22px; width: 12px; text-align: center; color: var(--c); font-weight: 700; }
+.flowx b { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--c); color: #fff; font-size: 14px; }
+.flowx h3 { margin: 10px 0 4px; font-size: 17px; }
+.flowx p { margin: 0; font-size: 15px; }
+
+/* Outcomes with how each was measured */
+.outc { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px; margin: 14px 0 22px; }
+.outc > div { background: var(--soft); border-radius: 18px; padding: 20px; }
+.outc b { display: block; font-size: 40px; line-height: 1; color: var(--c); font-weight: 700; }
+.outc span { display: block; margin-top: 6px; font-weight: 600; }
+.outc em { display: block; margin-top: 8px; font-style: normal; font-size: 13.5px; color: var(--muted); }
+
+/* Before / after workflows */
+.ba { display: grid; gap: 14px; margin-top: 10px; }
+.ba article { border: 1px solid var(--line); border-radius: 18px; padding: 18px 20px; }
+.ba h3 { margin: 0 0 10px; font-size: 18px; color: var(--c); }
+.ba-in { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; }
+.ba-in p { margin: 0; padding: 14px 16px; border-radius: 12px; font-size: 15.5px; }
+.ba-in span { display: block; font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 4px; }
+.ba .b { background: var(--soft); } .ba .b span { color: var(--muted); }
+.ba .a { background: color-mix(in srgb, var(--c) 9%, #fff); } .ba .a span { color: var(--c); }
+
+/* Wireframe-to-app journey and final experience blocks */
+.journey4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; align-items: end; }
+.journey4 .fig img { aspect-ratio: 3 / 4; object-fit: contain; background: var(--soft); border-radius: 14px; }
+.fx { margin: 10px 0 34px; }
+.fx h3 { margin: 0 0 4px; font-size: 22px; color: var(--c); }
+.fx > p { margin: 0 0 12px; }
+
+@media (max-width: 860px) {
+  .two-sided, .own, .ba-in { grid-template-columns: 1fr; }
+  .flowx { grid-template-columns: 1fr 1fr; }
+  .flowx li:not(:last-child)::after { display: none; }
+  .journey4 { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 520px) { .flowx { grid-template-columns: 1fr; } }
+
+/* Hero video (Paraillel): size it like the hero images. */
+.case-hero > * { min-width: 0; }
+.ch-pic video { display: block; width: 100%; height: auto; mix-blend-mode: multiply; }
+.split > * { min-width: 0; }
+.pair2 { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; align-items: start; }
+.pair2 .fig img { width: 100%; aspect-ratio: 4 / 3; object-fit: contain; background: var(--soft); border-radius: 14px; }
+@media (max-width: 860px) { .pair2 { grid-template-columns: 1fr; } }
+/* Merged case studies: tags on new or updated sections, and the side contents grouped by phase. */
+.toc-ph { margin: 14px 0 4px; font-size: 11.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--ink); }
+.toc-ph:first-child { margin-top: 0; }
+.toc-ph span { color: var(--c); margin-right: 6px; }
+.toc a { padding-left: 22px; }

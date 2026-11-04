@@ -244,4 +244,17 @@ ${foot({ base: B })}
 }
 
 const CASES = [HEALTHYHAND, require('./cases/paraillel')({ B, fig, zoom, list, quotes, facts, glance, cards, diamond, esc }), require('./cases/helper-bees')({ B, fig, zoom, list, quotes, facts, glance, cards, diamond, esc }), require('./cases/cli')({ B, fig, zoom, list, quotes, facts, glance, cards, diamond, esc }), require('./cases/tandem')({ B, fig, zoom, list, quotes, facts, glance, cards, diamond, esc }), require('./cases/tudum')({ B, fig, zoom, list, quotes, facts, glance, cards, diamond, esc })];
-for (const c of CASES) { fs.writeFileSync(path.join(__dirname, 'projects', c.key + '.html'), casePage(c)); console.log('wrote projects/' + c.key + '.html'); }
+/* Run directly: write every case study. Required (by the rewrite mockups): just hand over the pieces. */
+if (require.main === module) {
+  for (const c of CASES) { fs.writeFileSync(path.join(__dirname, 'projects', c.key + '.html'), casePage(c)); console.log('wrote projects/' + c.key + '.html'); }
+}
+module.exports = { casePage, fig, zoom, list, quotes, facts, glance, cards, diamond, todo, esc, CASES };
+
+/* The four rewritten case studies replace their older versions: every live section kept, plus the new ones (v2/merge.js). */
+if (require.main === module) {
+  const v2 = require('./v2/merge');
+  for (const key of ['paraillel', 'healthyhand', 'cli', 'tandem']) {
+    fs.writeFileSync(path.join(__dirname, 'projects', key + '.html'), v2.build(key, B).page);
+    console.log('wrote projects/' + key + '.html (v2)');
+  }
+}
