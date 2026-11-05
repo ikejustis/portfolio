@@ -63,8 +63,6 @@ ${note('Kept high level on purpose, so the page shows what you built without sho
 <p>I designed the components once and built them once. Every color, radius, shadow and type size is a token in <code>tokens.css</code>, and the buttons, chips, badges and cards are shared classes in <code>components.css</code>. Screens compose those pieces instead of styling themselves, so every screen stays consistent and accessible.</p>
 ${zoom(IMG + 'design-system.webp', 'HealthyHand design system: color tokens, Lexend Deca type scale, buttons, chips and badges, the partner card, and shape and elevation tokens')}
 <p class="hint">Rendered from the app’s real CSS. Tap to see it full size.</p>
-<h3>How I use AI in my workflow</h3>
-<p>I use AI coding tools to move faster on implementation: scaffolding screens, writing tests and catching bugs. The product decisions, UX, architecture and every line I ship stay my responsibility.</p>
 ${note('Sections 06 (final experience: For You, Map and Canopy screens and the launch film) and 07 (takeaways and reflection) would keep the content of the live case study. They’re left out of this draft to keep it short.')}`],
     ],
   };
