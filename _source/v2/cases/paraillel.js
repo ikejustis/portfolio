@@ -7,7 +7,7 @@ module.exports = (B, k) => {
   return {
     key: 'paraillel', color: C,
     title: 'Paraillel case study · Ikedi J. Nwogu',
-    description: 'Lead Product Designer on Paraillel, an AI-powered learning platform built from 0 to 1 for teachers and students in underserved Detroit districts.',
+    description: 'Product Lead on Paraillel, an AI-powered learning platform built from 0 to 1 for teachers and students in underserved Detroit districts.',
     hero: `<section class="case-hero" style="--c:${C}">
   <div class="ch-txt">
     <p class="eyebrow num-eyebrow">${num(1, 'Project introduction')}</p>
@@ -17,7 +17,7 @@ module.exports = (B, k) => {
   </div>
   <div class="ch-pic"><video src="${B}assets/video/paraillel.mp4" poster="${B}assets/img/paraillel.webp" autoplay muted loop playsinline preload="metadata" aria-label="Walkthrough of the Paraillel teacher dashboard and assignments"></video></div>
 </section>
-${facts([['Role', 'Lead Product Designer'], ['Timeline', 'Jul 2023 – Mar 2024 · 0 to 1'], ['Platform', 'AI ed-tech web app for teachers and students'], ['Team', '4 designers I led, plus PMs, engineers and AI specialists']])}
+${facts([['Role', 'Product Lead'], ['Timeline', 'Jul 2023 – Mar 2024 · 0 to 1'], ['Platform', 'AI ed-tech web app for teachers and students'], ['Team', '4 designers I led, plus PMs, engineers and AI specialists']])}
 ${glance([
   ['The problem', 'Students needed learning that fits them. Teachers needed less admin work and more time with students.'],
   ['What I owned', 'Product definition from 0 to 1, leading and mentoring four designers, research, and the WCAG 2.2 design system.'],

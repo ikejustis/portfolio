@@ -5,7 +5,7 @@ module.exports = ({ B, fig, zoom, list, quotes, facts, glance, cards, diamond })
   return {
     key: 'paraillel', color: C,
     title: 'Paraillel case study · Ikedi J. Nwogu',
-    description: 'Lead Product Designer on Paraillel, an AI-powered classroom dashboard that helps teachers in underserved districts personalize learning and spend less time on admin.',
+    description: 'Product Lead on Paraillel, an AI-powered classroom dashboard that helps teachers in underserved districts personalize learning and spend less time on admin.',
     hero: `<section class="case-hero" style="--c:${C}">
   <div class="ch-txt">
     <img class="ch-logo sm" src="${IMG}logo.webp" alt="Paraillel" width="321" height="101">
@@ -14,7 +14,7 @@ module.exports = ({ B, fig, zoom, list, quotes, facts, glance, cards, diamond })
   </div>
   <div class="ch-pic"><img src="${B}assets/img/paraillel.webp" alt="Paraillel teacher dashboard on a laptop" width="1400" height="887"></div>
 </section>
-${facts([['Role', 'Lead Product Designer'], ['Timeline', '2023 – 2024'], ['Platform', 'AI ed-tech web app'], ['Team', 'Designers, researchers, developers and PMs']])}
+${facts([['Role', 'Product Lead'], ['Timeline', '2023 – 2024'], ['Platform', 'AI ed-tech web app'], ['Team', 'Designers, researchers, developers and PMs']])}
 ${glance([
   ['The challenge', 'Teachers in underserved Detroit schools struggle to personalize lessons with outdated tools, while admin work takes time away from students.'],
   ['What I did', 'Led design and research for the core tools: the dashboard, calendar, assignments and the design system, built to WCAG 2.2.'],
@@ -39,7 +39,7 @@ ${cards([
   ['Interactive calendar & reminders', 'Students track deadlines; teachers organize lesson plans efficiently.'],
   ['Accessibility-focused design', 'Every student, including those with disabilities, can fully use the platform through WCAG 2.2-compliant features.'],
 ])}
-<p style="margin-top:18px">As Lead Product Designer and researcher, I designed AI-powered classroom tools that addressed critical pain points, empowering educators, engaging students and improving education for underserved communities in Detroit.</p>`],
+<p style="margin-top:18px">As Product Lead and researcher, I designed AI-powered classroom tools that addressed critical pain points, empowering educators, engaging students and improving education for underserved communities in Detroit.</p>`],
       ['process', 'Design process', 'Project overview', `
 <p>I followed a structured, research-driven process that kept users at the center while aligning with business goals.</p>
 <div class="scroll-x">${diamond('#DDF1FC', '#93C2F8')}</div>`],

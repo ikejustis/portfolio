@@ -15,7 +15,7 @@ const PROJECTS = [
     img: 'healthyhand.webp', alt: 'HealthyHand For You and Map screens on two iPhones in front of the partner business dashboard',
     links: [['View Project', 'projects/healthyhand.html'], ['View Site', 'https://www.healthyhand.co']] },
   { key: 'paraillel', tag: 'AI startup', color: '#1E6FD9', title: 'Boosting Teacher Efficiency & Student Potential With AI-Powered Classroom Tools',
-    meta: ['Lead Product Designer', '2023 – 2024', 'AI ed-tech web app'],
+    meta: ['Product Lead', '2023 – 2024', 'AI ed-tech web app'],
     body: ['Helped take Paraillel from 0 to 1, leading product design and a team of four designers I mentored, for AI-powered classroom tools that personalize learning for students and cut teachers’ admin work.'],
     chips: ['+22% task success', '−30% user errors', '0-to-1 product'],
     video: 'paraillel.mp4', img: 'paraillel.webp', alt: 'Walkthrough of the Paraillel teacher dashboard and assignments on a laptop', links: [['View Project', 'projects/paraillel.html']] },
