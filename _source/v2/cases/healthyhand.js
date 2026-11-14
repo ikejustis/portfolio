@@ -6,7 +6,7 @@ module.exports = (B, k) => {
     return {
     key: 'healthyhand', color: C,
     title: 'HealthyHand case study · Ikedi J. Nwogu',
-    description: 'Design Lead on HealthyHand, a wellness discovery platform: product strategy, research, UX/UI, the design system, and the code behind the iOS app, partner dashboard and backend.',
+    description: 'Product Lead on HealthyHand, a wellness discovery platform: product strategy, research, UX/UI, the design system, and the code behind the iOS app, partner dashboard and backend.',
     hero: `<section class="case-hero" style="--c:${C}">
   <div class="ch-txt">
     <p class="eyebrow num-eyebrow">${num(1, 'Project introduction')}</p>
@@ -16,7 +16,7 @@ module.exports = (B, k) => {
   </div>
   <div class="ch-pic"><img src="${IMG}hero-pair.webp" alt="HealthyHand Map and For You screens on two iPhones" width="1300" height="1509"></div>
 </section>
-${facts([['Role', 'Design Lead'], ['Timeline', 'Oct 2025 – Present'], ['Platform', 'iOS app, partner dashboard and backend'], ['Built with', 'Figma, plus my own code for iOS, web and backend']])}
+${facts([['Role', 'Product Lead'], ['Timeline', 'Oct 2025 – Present'], ['Platform', 'iOS app, partner dashboard and backend'], ['Built with', 'Figma, plus my own code for iOS, web and backend']])}
 ${glance([
   ['The problem', 'Health-conscious people struggle to find healthy places nearby, and small wellness businesses struggle to be found.'],
   ['What I own', 'Everything from strategy and research to the design system, the code for the app, dashboard and backend, and the brand.'],

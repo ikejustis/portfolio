@@ -91,7 +91,7 @@ const TAKEAWAYS = [
 const HEALTHYHAND = {
   key: 'healthyhand', color: '#2E7D32',
   title: 'HealthyHand case study · Ikedi J. Nwogu',
-  description: 'Design Lead on HealthyHand, an iOS app that helps people discover healthy restaurants, studios, parks and clinics near them, and earn rewards for every visit.',
+  description: 'Product Lead on HealthyHand, an iOS app that helps people discover healthy restaurants, studios, parks and clinics near them, and earn rewards for every visit.',
   hero: `<section class="case-hero" style="--c:#2E7D32">
   <div class="ch-txt">
     <img class="ch-logo" src="${IMG}logo.png" alt="HealthyHand" width="1000" height="230">
@@ -101,7 +101,7 @@ const HEALTHYHAND = {
   <div class="ch-pic"><img src="${IMG}hero-pair.webp" alt="HealthyHand app: the Map and For You screens on two iPhones" width="1100" height="1218"></div>
 </section>
 <dl class="facts">
-  <div><dt>Role</dt><dd>Design Lead</dd></div>
+  <div><dt>Role</dt><dd>Product Lead</dd></div>
   <div><dt>Timeline</dt><dd>2025 – Present</dd></div>
   <div><dt>Platform</dt><dd>iOS app</dd></div>
   <div><dt>Focus</dt><dd>Research, UX/UI, accessibility, brand</dd></div>
@@ -115,7 +115,7 @@ const HEALTHYHAND = {
     ['overview', 'Overview', 'Project overview', `
 <div class="split film-split">
   <div>
-    <p><b>HealthyHand</b> is more than a locator app; it’s a movement toward better living. By connecting people with health-focused businesses and services, we’re building a culture of wellness and sustainability. As the Design Lead for HealthyHand, I shaped the app’s experience and functionality. My responsibilities included:</p>
+    <p><b>HealthyHand</b> is more than a locator app; it’s a movement toward better living. By connecting people with health-focused businesses and services, we’re building a culture of wellness and sustainability. As the Product Lead for HealthyHand, I shaped the app’s experience and functionality. My responsibilities included:</p>
     ${list([['User research & insights', 'interviews, surveys and usability testing to understand the needs of health-conscious people.'],
       ['Experience design', 'wireframes, prototypes and high-fidelity designs for a seamless, engaging journey.'],
       ['Information architecture', 'structuring navigation and layout so finding wellness services feels intuitive.'],

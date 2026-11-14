@@ -8,8 +8,8 @@ const { SITE, esc, head, nav, foot, livingSky } = require('./common');
 /* meta: role · when · what. chips: outcomes and focus, only what the case study or resume backs up. */
 const PROJECTS = [
   { key: 'healthyhand', tag: 'Startup', color: '#2E7D32', title: 'Lending a Healthy Hand: Making Health & Wellness Accessible',
-    meta: ['Design Lead', '2025 – Present', 'iOS app, partner dashboard + backend'],
-    body: ['I lead design for HealthyHand and build it end to end, from product strategy and UX to the design system and the code behind the iOS app, partner dashboard and backend.',
+    meta: ['Product Lead', '2025 – Present', 'iOS app, partner dashboard + backend'],
+    body: ['I lead product and design for HealthyHand and build it end to end, from product strategy and UX to the design system and the code behind the iOS app, partner dashboard and backend.',
       'Members find curated cafés, studios, parks and clinics through personalized onboarding and a map, and earn rewards for every visit, while small businesses get the visibility to compete and grow in their local markets.'],
     chips: ['0-to-1 product', 'Health & wellness'],
     img: 'healthyhand.webp', alt: 'HealthyHand For You and Map screens on two iPhones in front of the partner business dashboard',
