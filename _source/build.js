@@ -81,7 +81,7 @@ ${nav({ base: '', current: 'home' })}
 <section class="sky hero" aria-label="Introduction">
   ${livingSky({ bank: true })}
   <div class="hero-in">
-    <p class="eyebrow">Hi, I’m Ikedi</p>
+    <p class="eyebrow">Welcome to my portfolio</p>
     <h1>Design thinker.<br>Product builder.<br>Storyteller.</h1>
     <p class="lede">Building products that turn complex challenges into intuitive, meaningful experiences.</p>
     <div class="hero-btns"><a class="btn solid" href="#work">View my work</a></div>
