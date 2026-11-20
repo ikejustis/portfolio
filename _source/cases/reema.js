@@ -17,17 +17,17 @@ module.exports = ({ B, fig, list, facts, glance, cards, esc }) => {
   return {
     key: 'reema', color: C,
     title: 'Sounds of Reema case study · Ikedi J. Nwogu',
-    description: 'A UX case study: redesigning LA DJ Reema’s website around one business goal, more bookings, from audit and journey mapping to a design system and a working, responsive prototype.',
+    description: 'A UX case study: redesigning LA DJ Reema’s website around one business goal, more bookings, from audit and journey mapping to a design system and a responsive site.',
     hero: `<section class="case-hero" style="--c:${C}">
   <div class="ch-txt">
     <p class="eyebrow num-eyebrow">${num(1, 'Project introduction')}</p>
     <h1 class="long" style="color:#17120F">Redesigning a DJ’s website around one business goal: more bookings.</h1>
-    <p class="lede">Reema is a Los Angeles DJ, “a sound selector”, and an affiliate of How a Sunset Sounds. She reached out because she wanted more bookings. I owned the redesign end to end: auditing her site, mapping how bookers reach her, building a small design system, and shipping a working, responsive prototype with a plan to measure the result.</p>
+    <p class="lede">Reema is a Los Angeles DJ, “a sound selector”, and an affiliate of How a Sunset Sounds. She reached out because she wanted more bookings. I owned the redesign end to end: auditing her site, mapping how bookers reach her, building a small design system, and shipping a responsive site with a plan to measure the result.</p>
     <p><a class="btn" href="reema-prototype/">View Site</a></p>
   </div>
   <div class="ch-pic"><img src="${IMG}hero.webp" alt="The redesigned Sounds of Reema site on a laptop and a phone: taped polaroids of her sets around her name" width="1400" height="818"></div>
 </section>
-${facts([['Client', 'Reema, DJ (Los Angeles)'], ['Business goal', 'More booking inquiries'], ['My role', 'Lead product designer, solo and end to end'], ['Shipped', 'Design system and a working, responsive prototype']])}
+${facts([['Client', 'Reema, DJ (Los Angeles)'], ['Business goal', 'More booking inquiries'], ['My role', 'Lead product designer, solo and end to end'], ['Shipped', 'Design system and a responsive site']])}
 ${glance([
   ['The problem', 'Her site was where bookers decided, but it hid what they decide on: no photos on the first screen, small links, and a Book button that disappeared once you scrolled.'],
   ['What I owned', 'Research, journey mapping, three design directions, the design system, the front-end build, testing across screen sizes, and the launch measurement plan.'],

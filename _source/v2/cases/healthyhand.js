@@ -23,7 +23,7 @@ ${facts([['Role', 'Product Lead'], ['Timeline', 'Oct 2025 – Present'], ['Platf
 ${glance([
   ['The problem', 'Health-conscious people struggle to find healthy places nearby, and small wellness businesses struggle to be found.'],
   ['What I own', 'Everything from strategy and research to the design system, the code for the app, dashboard and backend, and the brand.'],
-  ['The impact', '500+ people joined the waitlist and turned into sign-ups, and 7 Houston partners came on board, including Baylor College of Medicine Teen Health Clinic.'],
+  ['The impact', '500+ sign-ups, and 7 Houston partners on board, including Baylor College of Medicine Teen Health Clinic.'],
 ])}`,
     sections: [
       ['problem', 'Healthy choices are hard to find', num(2, 'The problem'), `
@@ -91,7 +91,7 @@ ${cards([
 ])}`],
       ['impact', 'Impact so far', num(7, 'Outcomes &amp; reflection'), `
 ${outcomes([
-  ['500+', 'waitlist members who turned into sign-ups', 'Pre-launch waitlist'],
+  ['500+', 'sign-ups', 'From the pre-launch waitlist'],
   ['7', 'Houston partners on board', 'Including Baylor College of Medicine Teen Health Clinic'],
 ])}
 <p>The partners span healthy food, fitness and health care: Rush Bowls, A Moveable Feast, Cranky Carrot Juice Co., The Studio BE, Pure Barre, Spar Houston, and Baylor College of Medicine Teen Health Clinic.</p>`]
