@@ -23,7 +23,7 @@ module.exports = ({ B, fig, list, facts, glance, cards, esc }) => {
     <p class="eyebrow num-eyebrow">${num(1, 'Project introduction')}</p>
     <h1 class="long" style="color:#17120F">Redesigning a DJ’s website around one business goal: more bookings.</h1>
     <p class="lede">Reema is a Los Angeles DJ, “a sound selector”, and an affiliate of How a Sunset Sounds. She reached out because she wanted more bookings. I owned the redesign end to end: auditing her site, mapping how bookers reach her, building a small design system, and shipping a working, responsive prototype with a plan to measure the result.</p>
-    <p><a class="btn" href="reema-prototype/">View live prototype</a></p>
+    <p><a class="btn" href="https://ikejustis.github.io/Sounds-of-Reema/" target="_blank" rel="noopener">View live prototype</a></p>
   </div>
   <div class="ch-pic"><img src="${IMG}hero.webp" alt="The redesigned Sounds of Reema site on a laptop and a phone: taped polaroids of her sets around her name" width="1400" height="818"></div>
 </section>
@@ -105,7 +105,7 @@ ${beforeAfter([
 ])}`],
       ['final', 'The final experience', num(6, 'Final experience'), `
 <p>Try it yourself: the prototype is live, with her real photos, sets and flyers, and works on desktop and phone.</p>
-<p><a class="btn" href="reema-prototype/">View live prototype</a></p>
+<p><a class="btn" href="https://ikejustis.github.io/Sounds-of-Reema/" target="_blank" rel="noopener">View live prototype</a></p>
 <div class="split rev"><div><h3>Booking, one click away</h3><p>Her email in large type, a Copy email button that confirms with “Copied!”, and a way to open an email app. It’s the same pop-up from the header, the hero and the booking card.</p></div>${fig(IMG + 'popup-laptop.webp', 'The booking pop-up on a laptop: her email address, with Copy email and Open email app buttons')}</div>
 <div class="split"><div>${fig(IMG + 'phones.webp', 'Before and after on a phone: the old type-only first screen, and the new collage with Book Reema and SoundCloud buttons')}</div><div><h3>Built for the phone</h3><p>Many visits start from her socials on a phone. On mobile, her name and both buttons come first, and the Book button stays in the header as you scroll.</p></div></div>
 ${fig(IMG + 'sets.webp', 'Watch the sets: three YouTube sets in polaroid frames, and a SoundCloud band', 'Her three YouTube sets open on YouTube, with SoundCloud one tap away.')}
