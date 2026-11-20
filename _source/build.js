@@ -22,7 +22,7 @@ const PROJECTS = [
   { key: 'reema', tag: 'Music & nightlife', color: '#D6336C', title: 'Sounds of Reema: A Website Built to Get a DJ Booked', meta: ['Product Designer', 'Music & nightlife', 'Website redesign'],
     body: ['Reema, an LA DJ, reached out to get more bookings. I audited her site, mapped how bookers reach her, and redesigned her site: her set photos lead, her proof sits up front, and booking takes one click.'],
     chips: ['Booking in 1 click', 'Photo-led hero', 'Responsive site'],
-    img: 'reema.webp', alt: 'The redesigned Sounds of Reema site on a laptop', links: [['View Project', 'projects/reema.html'], ['View Site', 'projects/reema-prototype/']] },
+    img: 'reema.webp', alt: 'The redesigned Sounds of Reema site on a laptop', links: [['View Project', 'projects/reema.html'], ['View Site', 'projects/reema-site/']] },
   { key: 'cli', tag: 'Education & health', color: '#B5643C', title: 'UT Health’s UX Initiatives in the Education and Clinical Setting',
     meta: ['Senior UX Designer', 'UT Health · 2024 – 2025', 'Education & clinical web'],
     body: ['Led UX strategy, research and a WCAG 2.2 design system across two education and clinical research platforms, running workshops with 75 participants across product teams to set shared UX standards.'],
