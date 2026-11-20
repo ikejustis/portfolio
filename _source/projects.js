@@ -243,7 +243,7 @@ ${foot({ base: B })}
 `;
 }
 
-const CASES = [HEALTHYHAND, require('./cases/paraillel')({ B, fig, zoom, list, quotes, facts, glance, cards, diamond, esc }), require('./cases/helper-bees')({ B, fig, zoom, list, quotes, facts, glance, cards, diamond, esc }), require('./cases/cli')({ B, fig, zoom, list, quotes, facts, glance, cards, diamond, esc }), require('./cases/tandem')({ B, fig, zoom, list, quotes, facts, glance, cards, diamond, esc }), require('./cases/tudum')({ B, fig, zoom, list, quotes, facts, glance, cards, diamond, esc })];
+const CASES = [HEALTHYHAND, require('./cases/paraillel')({ B, fig, zoom, list, quotes, facts, glance, cards, diamond, esc }), require('./cases/helper-bees')({ B, fig, zoom, list, quotes, facts, glance, cards, diamond, esc }), require('./cases/cli')({ B, fig, zoom, list, quotes, facts, glance, cards, diamond, esc }), require('./cases/tandem')({ B, fig, zoom, list, quotes, facts, glance, cards, diamond, esc }), require('./cases/tudum')({ B, fig, zoom, list, quotes, facts, glance, cards, diamond, esc }), require('./cases/reema')({ B, fig, zoom, list, quotes, facts, glance, cards, diamond, esc })];
 /* Run directly: write every case study. Required (by the rewrite mockups): just hand over the pieces. */
 if (require.main === module) {
   for (const c of CASES) { fs.writeFileSync(path.join(__dirname, 'projects', c.key + '.html'), casePage(c)); console.log('wrote projects/' + c.key + '.html'); }

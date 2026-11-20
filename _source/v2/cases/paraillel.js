@@ -2,6 +2,9 @@
    anything only the review suggested is wrapped in cf() for Ikedi to confirm. */
 module.exports = (B, k) => {
   const { fig, zoom, list, quotes, facts, glance, cards, cf, num, own, i2d, flow, outcomes, note } = k;
+  /* A table with a header row and labelled rows, in the site's journey-map style. */
+  const table = (head, rows, label) => `<div class="scroll-x"><table class="jmap ctable" aria-label="${label}"><thead><tr>${head.map((h) => `<th scope="col">${h}</th>`).join('')}</tr></thead><tbody>${rows.map(([h, ...cells]) => `<tr><th scope="row">${h}</th>${cells.map((c) => `<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+
   const IMG = B + 'assets/img/par/';
   const C = '#1E6FD9';
   return {
@@ -88,6 +91,22 @@ ${outcomes([
   <div><h3>What I learned</h3><p>Designing for underserved districts made accessibility and simplicity non-negotiable. The biggest wins came from testing early with real teachers. Each round removed something rather than adding it.</p></div>
   <div><h3>What I’d do next</h3>${list([['Measure admin time', 'in real classrooms, before and after.'], ['Better AI personalization', 'from real classroom data.'], ['LMS integration', 'with the systems schools already use.']])}</div>
 </div>`],
+      ['journey', 'The teacher journey, and where it broke', num(4, 'Research &amp; insights'), `
+<p>From the interviews, I mapped how a teacher moves from first hearing about Paraillel to relying on it, with the emotions, pain points and opportunities at each stage.</p>
+${table(['Stage', 'Teacher’s goal', 'Emotion', 'Pain point', 'Opportunity'], [
+  ['Awareness', 'Understand what Paraillel is and how it helps', 'Curious, cautious', 'Unsure if it will integrate with existing tools', 'A clear value proposition and onboarding emails'],
+  ['Onboarding', 'Get set up without feeling lost', 'Excited but slightly overwhelmed', 'Too many features at once, unsure where to start', 'An interactive guided tour with real use cases'],
+  ['First use', 'Create lesson plans and organize the classroom', 'Engaged but uncertain', 'Concerned about data accuracy and workflow efficiency', 'AI-suggested templates and auto-setup'],
+  ['Daily use', 'Track student progress and manage assignments', 'Confident but time-sensitive', 'Moving between features takes effort', 'A personalized, customizable dashboard'],
+  ['Long-term use', 'Improve teaching efficiency and student success', 'Empowered and reliant on the tool', 'Wants better integration with school systems', 'Advanced analytics, automated reports and LMS integration'],
+], 'Teacher journey map: stages, goals, emotions, pain points and opportunities')}
+<p>The first release focused where teachers spend their time, first and daily use: AI recommendations, a customizable dashboard and assignment tabs. Long-term integration with school systems became the next step.</p>`],
+      ['tradeoffs', 'Tradeoffs I weighed', num(5, 'Design decisions'), `
+${cards([
+  ['Automation vs. teacher control', 'AI could assign work on its own, but teachers needed to trust it. AI recommends; the teacher reviews, edits or rejects every suggestion before students see it.'],
+  ['Power vs. simplicity', 'Showing everything at once looked efficient, but testing showed the dashboard overwhelmed teachers. A customizable dashboard lets each teacher choose the widgets they need.'],
+  ['Speed vs. accessibility', 'Building accessibility in later would have been faster at first. A WCAG 2.2 design system from the start made every tool inclusive and sped up development.'],
+])}`]
     ],
   };
 };

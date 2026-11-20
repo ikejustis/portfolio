@@ -1,6 +1,6 @@
 /* UT Health × CLI, rewritten: sections 01–05 drafted with anonymized visuals, because CLI's product visuals are restricted. */
 module.exports = (B, k) => {
-  const { list, facts, glance, cards, cf, num, own, flow, outcomes, note, todo } = k;
+  const { list, facts, glance, cards, cf, num, own, flow, outcomes, i2d, note, todo } = k;
   const IMG = B + 'assets/img/cli/';
   const C = '#B5643C';
   return {
@@ -38,6 +38,7 @@ ${own([
   ['How we worked', ['Agile and Scrum, with design in every sprint', 'Shared components instead of one-off screens', 'Research findings shared across teams, not kept inside one']],
 ])}`],
       ['research', 'Research that informed every team', num(4, 'Research &amp; insights'), `
+<dl class="facts in"><div><dt>Methods</dt><dd>Usability testing, feedback sessions, cross-team workshops, Help Center research</dd></div><div><dt>Participants</dt><dd>Educators, early-childhood professionals, clinicians and researchers</dd></div><div><dt>Workshops</dt><dd>75 participants across product teams</dd></div><div><dt>Platforms</dt><dd>CLI Engage and TECPDS</dd></div></dl>
 <h3>Cross-team workshops</h3>
 ${flow([
   ['Map the journeys', 'Each team mapped its users’ key tasks and where they got stuck.'],
@@ -47,15 +48,39 @@ ${flow([
 ], 'How the cross-team workshops ran')}
 <h3>Help Center research</h3>
 <p>Research into how educators and families look for help, and where they get stuck. The clearest finding: people needed <b>clearer navigation</b> to reach the help they were looking for. That shaped the improvements, which focused on making the Help Center easier to find your way around.</p>
+<h3>What we learned</h3>
+${cards([
+  ['The same task, different everywhere', 'Navigation grew product by product, so users had to relearn the same task on each platform.'],
+  ['Patterns drifted between teams', 'Without shared standards, each team built its own buttons, forms and layouts.'],
+  ['Accessibility gaps', 'Contrast, focus and keyboard support varied, which shut out users with diverse needs.'],
+  ['Users vary widely', 'From educators with limited time and varied technical skill to clinicians whose study data must stay accurate.'],
+])}
 `],
       ['decisions', 'Simplifying navigation and standards', num(5, 'Design decisions'), `
-${cards([
-  ['One navigation model', 'Tasks grouped by what users are trying to do, not by which team built the feature.'],
-  ['A shared design system', 'WCAG 2.2 components with documented usage, so every team builds the same way.'],
-  ['Accessibility built in', 'Contrast, focus states, keyboard navigation and readable type in every component.'],
-])}
+${i2d([
+  ['The same task worked differently on each platform.', 'One navigation model, with tasks grouped by what users are trying to do, not by which team built the feature.'],
+  ['Patterns drifted between teams.', 'A shared WCAG 2.2 design system with documented usage, so every team builds the same way.'],
+  ['Accessibility varied from screen to screen.', 'Contrast, focus states, keyboard navigation and readable type built into every component, not added per screen.'],
+  ['People couldn’t find their way to help.', 'Clearer Help Center navigation, so educators and families reach the help they’re looking for.'],
+  ['Clinicians and researchers need data they can trust.', 'Study workflows validated with engineers against backend logic, so the design never puts data integrity at risk.'],
+], 'What research showed', 'What I designed')}
 ${note('Product screens and diagrams are left out to respect CLI’s confidentiality. 06 (final experience) and 07 (outcomes and reflection) follow the same pattern as Paraillel.')}
-${outcomes([['+20%', 'usability &amp; adoption', 'Research and usability testing with educators'], ['+30%', 'consistency &amp; usability', 'After the WCAG 2.2 design system']])}`],
+`],
+      ['standards', 'Cross-team standards as a system', num(5, 'Design decisions'), `
+<p>The biggest lever wasn’t one screen; it was how every team designs. I treated UX standards as a system that turns research into consistent products across teams.</p>
+${flow([
+  ['Shared research', 'Findings from every team pooled in one place, so no team learns alone.'],
+  ['Agreed standards', 'Navigation, component and accessibility rules agreed in workshops with 75 participants.'],
+  ['One design system', 'WCAG 2.2 components with documented usage, the single source for every team.'],
+  ['Every product', 'CLI Engage and TECPDS built from the same parts, in every sprint.'],
+], 'How cross-team standards work as a system: research, standards, design system, products')}
+${cards([
+  ['Built for adoption', 'Teams agreed on the standards themselves in the workshops, so they used them instead of working around them.'],
+  ['Shared components, not one-off screens', 'Teams compose screens from documented components, so new work starts consistent and accessible.'],
+  ['Kept alive in every sprint', 'Design ran inside Agile and Scrum, so the standards evolved with the products instead of going stale.'],
+])}`],
+      ['impact', 'Impact', num(7, 'Outcomes &amp; reflection'), `
+${outcomes([['+20%', 'usability &amp; adoption', 'Research and usability testing with educators'], ['+30%', 'consistency &amp; usability', 'After the WCAG 2.2 design system'], ['75', 'workshop participants across product teams', 'Shared UX standards']])}`],
     ],
   };
 };

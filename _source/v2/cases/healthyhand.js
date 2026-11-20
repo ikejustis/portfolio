@@ -1,6 +1,9 @@
 /* HealthyHand, rewritten as the founder / Design Engineer story: sections 01–05 drafted, 06–07 keep the live page's content. */
 module.exports = (B, k) => {
-  const { fig, zoom, list, facts, glance, cards, cf, num, own, flow, note } = k;
+  const { fig, zoom, list, facts, glance, cards, cf, num, own, flow, outcomes, i2d, note } = k;
+  /* A table with a header row and labelled rows, in the site's journey-map style. */
+  const table = (head, rows, label) => `<div class="scroll-x"><table class="jmap ctable" aria-label="${label}"><thead><tr>${head.map((h) => `<th scope="col">${h}</th>`).join('')}</tr></thead><tbody>${rows.map(([h, ...cells]) => `<tr><th scope="row">${h}</th>${cells.map((c) => `<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+
   const IMG = B + 'assets/img/hh/';
   const C = '#2E7D32';
     return {
@@ -20,7 +23,7 @@ ${facts([['Role', 'Product Lead'], ['Timeline', 'Oct 2025 – Present'], ['Platf
 ${glance([
   ['The problem', 'Health-conscious people struggle to find healthy places nearby, and small wellness businesses struggle to be found.'],
   ['What I own', 'Everything from strategy and research to the design system, the code for the app, dashboard and backend, and the brand.'],
-  ['Where it is', 'A working iOS app, partner dashboard and backend, piloting with local partner businesses in Houston.'],
+  ['The impact', '500+ people joined the waitlist and turned into sign-ups, and 7 Houston partners came on board, including Baylor College of Medicine Teen Health Clinic.'],
 ])}`,
     sections: [
       ['problem', 'Healthy choices are hard to find', num(2, 'The problem'), `
@@ -64,6 +67,34 @@ ${note('Kept high level on purpose, so the page shows what you built without sho
 ${zoom(IMG + 'design-system.webp', 'HealthyHand design system: color tokens, Lexend Deca type scale, buttons, chips and badges, the partner card, and shape and elevation tokens')}
 <p class="hint">Rendered from the app’s real CSS. Tap to see it full size.</p>
 ${note('Sections 06 (final experience: For You, Map and Canopy screens and the launch film) and 07 (takeaways and reflection) would keep the content of the live case study. They’re left out of this draft to keep it short.')}`],
+      ['journey', 'The member journey, end to end', num(4, 'Research &amp; insights'), `
+<p>I mapped the member’s journey from finding a place to coming back, and what each step had to do for the business on the other side.</p>
+${table(['Stage', 'Member’s goal', 'Before HealthyHand', 'What HealthyHand does', 'What the partner gets'], [
+  ['1 · Discover', 'Find a healthy place nearby', 'Scattered across search, maps and word of mouth', 'For You picks and a map of restaurants, studios, parks and clinics', 'Seen by people already looking for them'],
+  ['2 · Decide', 'Choose quickly, with confidence', 'Little trustworthy information in one place', 'Everything needed to decide on the partner page, plus favorites to save it for later', 'A page that tells their story'],
+  ['3 · Visit', 'Get there and go', 'No reason to pick a local spot over a chain', 'Directions from the app, and a visit that counts', 'New and returning visits'],
+  ['4 · Earn', 'Feel rewarded for healthy choices', 'Healthy habits go unrewarded', 'Points on every scanned receipt, turned into rewards', 'Rewards that bring regulars back'],
+  ['5 · Belong', 'Feel part of a local wellness community', 'Hard to find people and events', 'Canopy: local wellness events and workshops in one calendar', 'A community around their business'],
+], 'Member journey map: stages, goals, what was broken before, what HealthyHand does, and what the partner gets')}`],
+      ['systems', 'Thinking in systems', num(5, 'Design decisions &amp; build'), `
+<p>HealthyHand is a two-sided product, so I designed it as one system rather than a set of screens. Each partner is described once, and that single record feeds every place the partner appears.</p>
+${flow([
+  ['One partner record', 'Name, category, location, story and offers, kept in one place.'],
+  ['Shared components', 'The same tokens and components build the partner card, the partner page and the map.'],
+  ['Every surface', 'The member app and the partner dashboard read from the same data, so both sides always match.'],
+  ['Marketing, too', 'Partner spotlight reels are built from the same partner pages, so every fact matches the app.'],
+], 'How one partner record flows through the product: data, components, app and dashboard, and marketing')}
+${cards([
+  ['Two sides, one loop', 'Every design choice had to work for both members and partners: a visit is discovery for one and growth for the other.'],
+  ['Design system as code', 'Tokens and shared components in code, so a change to a color or a button updates every screen at once.'],
+  ['Built to scale partners', 'Adding a partner means adding one record; their card, page and map pin follow from it.'],
+])}`],
+      ['impact', 'Impact so far', num(7, 'Outcomes &amp; reflection'), `
+${outcomes([
+  ['500+', 'waitlist members who turned into sign-ups', 'Pre-launch waitlist'],
+  ['7', 'Houston partners on board', 'Including Baylor College of Medicine Teen Health Clinic'],
+])}
+<p>The partners span healthy food, fitness and health care: Rush Bowls, A Moveable Feast, Cranky Carrot Juice Co., The Studio BE, Pure Barre, Spar Houston, and Baylor College of Medicine Teen Health Clinic.</p>`]
     ],
   };
 };
