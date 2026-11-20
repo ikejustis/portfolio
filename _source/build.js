@@ -11,7 +11,7 @@ const PROJECTS = [
     meta: ['Product Lead', '2025 – Present', 'iOS app, partner dashboard + backend'],
     body: ['I lead product and design for HealthyHand and build it end to end, from product strategy and UX to the design system and the code behind the iOS app, partner dashboard and backend.',
       'Members find curated cafés, studios, parks and clinics through personalized onboarding and a map, and earn rewards for every visit, while small businesses get the visibility to compete and grow in their local markets.'],
-    chips: ['500+ waitlist sign-ups', '7 partners incl. Baylor', '0-to-1 product'],
+    chips: ['500+ sign-ups', '7 partners incl. Baylor', '0-to-1 product'],
     img: 'healthyhand.webp', alt: 'HealthyHand For You and Map screens on two iPhones in front of the partner business dashboard',
     links: [['View Project', 'projects/healthyhand.html'], ['View Site', 'https://www.healthyhand.co']] },
   { key: 'paraillel', tag: 'AI startup', color: '#1E6FD9', title: 'Boosting Teacher Efficiency & Student Potential With AI-Powered Classroom Tools',
