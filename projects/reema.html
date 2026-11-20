@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sounds of Reema case study · Ikedi J. Nwogu</title>
+<meta name="description" content="A UX case study: redesigning LA DJ Reema’s website around one business goal, more bookings, from audit and journey mapping to a design system and a working, responsive prototype.">
+<meta property="og:title" content="Sounds of Reema case study · Ikedi J. Nwogu">
+<meta property="og:description" content="A UX case study: redesigning LA DJ Reema’s website around one business goal, more bookings, from audit and journey mapping to a design system and a working, responsive prototype.">
+<meta property="og:image" content="https://www.ijnwogu.com/assets/img/og.jpg">
+<meta property="og:url" content="https://www.ijnwogu.com/projects/reema.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/img/favicon.png">
+<link rel="preload" href="../assets/fonts/urbanist-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../css/site.css">
+</head>
+<body class="case" style="--c:#D6336C">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav solid">
+  <a class="logo" href="../index.html" aria-label="Ikedi J. Nwogu, home"><img src="../assets/img/signature.png" alt="Ikedi J. Nwogu" width="631" height="227"></a>
+  <nav aria-label="Main">
+    <a href="../index.html">Home</a>
+    <div class="dd">
+      <button class="dd-btn on" aria-expanded="false" aria-controls="dd-cases">Product Design<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <div class="dd-menu" id="dd-cases"><a href="../projects/healthyhand.html">Healthy Hand</a><a href="../projects/paraillel.html">Paraillel</a><a href="../projects/reema.html" aria-current="page">Sounds of Reema</a><a href="../projects/cli.html">UT Health X CLI</a><a href="../projects/helper-bees.html">The Helper Bees</a><a href="https://ikejustis.github.io/geisinger-redesign/" target="_blank" rel="noopener">Geisinger</a><a href="../projects/tandem.html">Tandem</a><a href="../projects/tudum.html">Netflix Tudum Case Study</a></div>
+    </div>
+    <a href="../motion.html">Animation &amp; Motion Design</a>
+    <a href="../about.html">About</a>
+    <a class="li" href="https://www.linkedin.com/in/ikedi-j-nwogu-963736201/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 110 5 2.5 2.5 0 010-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.7V21h-4z"/></svg></a>
+  </nav>
+</header>
+<main id="main">
+<section class="case-hero" style="--c:#D6336C">
+  <div class="ch-txt">
+    <p class="eyebrow num-eyebrow"><span class="n">01</span> Project introduction</p>
+    <h1 class="long" style="color:#17120F">Redesigning a DJ’s website around one business goal: more bookings.</h1>
+    <p class="lede">Reema is a Los Angeles DJ, “a sound selector”, and an affiliate of How a Sunset Sounds. She reached out because she wanted more bookings. I owned the redesign end to end: auditing her site, mapping how bookers reach her, building a small design system, and shipping a working, responsive prototype with a plan to measure the result.</p>
+    <p><a class="btn" href="reema-prototype/">View live prototype</a></p>
+  </div>
+  <div class="ch-pic"><img src="../assets/img/reema/hero.webp" alt="The redesigned Sounds of Reema site on a laptop and a phone: taped polaroids of her sets around her name" width="1400" height="818"></div>
+</section>
+<dl class="facts"><div><dt>Client</dt><dd>Reema, DJ (Los Angeles)</dd></div><div><dt>Business goal</dt><dd>More booking inquiries</dd></div><div><dt>My role</dt><dd>Lead product designer, solo and end to end</dd></div><div><dt>Shipped</dt><dd>Design system and a working, responsive prototype</dd></div></dl>
+<section class="glance" aria-label="At a glance"><div><h2>The problem</h2><p>Her site was where bookers decided, but it hid what they decide on: no photos on the first screen, small links, and a Book button that disappeared once you scrolled.</p></div><div><h2>What I owned</h2><p>Research, journey mapping, three design directions, the design system, the front-end build, testing across screen sizes, and the launch measurement plan.</p></div><div><h2>The impact</h2><p>Measured on the same screens: 0 → 4 photos on the first screen, a Book button visible on every scroll, and header links 42% larger. Booking inquiries are tracked from launch.</p></div></section>
+<div class="case-body">
+  <nav class="toc" aria-label="On this page"><a href="#problem">A conversion problem, not a styling problem</a><a href="#role">Owning it end to end</a><a href="#research">Mapping how a booker gets to “yes”</a><a href="#decisions">From insight to decision</a><a href="#system">Thinking in systems</a><a href="#iterate">Refining it, round by round</a><a href="#final">The final experience</a><a href="#outcomes">Impact, and how I’ll measure it</a></nav>
+  <div class="case-main">
+<section class="cs" id="problem" aria-labelledby="problem-h">
+  <p class="eyebrow"><span class="n">02</span> The problem</p><h2 id="problem-h" style="color:#D6336C">A conversion problem, not a styling problem</h2>
+<p class="big">Bookings are Reema’s income, and her website is where a booker decides whether to reach out. The site had the right content but didn’t move anyone toward booking.</p>
+<div class="two-sided">
+  <article><h3>Bookers</h3><p>Promoters, venues, brands and private hosts. Many find her through Instagram or TikTok, often on a phone. They judge the vibe in seconds, want to hear a set, then need a fast way to reach her.</p></article>
+  <article><h3>Reema</h3><p>Wants more bookings without changing how she works: bookings arrive by email and Instagram DM, and she updates her own links, flyers and gigs.</p></article>
+</div>
+<h3>What success means</h3>
+<ul class="pts"><li><b>More booking inquiries</b> – per month, by email and Instagram DM, compared with before launch.</li><li><b>More visitors reaching out:</b> Book Reema, Copy email and DM clicks as a share of visits.</li><li><b>No new work for Reema:</b> she keeps updating the site the way she does today.</li></ul>
+</section>
+<section class="cs" id="role" aria-labelledby="role-h">
+  <p class="eyebrow"><span class="n">03</span> My role &amp; approach</p><h2 id="role-h" style="color:#D6336C">Owning it end to end</h2>
+<div class="own"><div><h3>I owned</h3><ul><li>The audit of her live site on desktop and phone</li><li>The booker journey map and the problem definition</li><li>Three design directions and the decision between them</li><li>The design system, the front-end build and testing across screen sizes</li><li>The launch measurement plan</li></ul></div><div><h3>I worked from</h3><ul><li>Reema’s goal: more bookings</li><li>Her real content: bio, 3 YouTube sets, SoundCloud, 17 event flyers and her set photos</li><li>How she takes bookings today: email and Instagram DMs</li></ul></div><div><h3>I balanced</h3><ul><li>Bookers: see the vibe, hear a set, reach her fast</li><li>Reema: a site that feels like her and stays easy to update</li><li>Brand personality against looking professional enough to book</li></ul></div></div>
+<h3>How I worked</h3>
+<ol class="flowx" aria-label="The process: discover, define, design and build, validate and iterate"><li><b>1</b><h3>Discover</h3><p>Audited her live site, inventoried her content, and walked the booking path on desktop and phone.</p></li><li><b>2</b><h3>Define</h3><p>Mapped the booker’s journey, named where it broke, and set the success measures.</p></li><li><b>3</b><h3>Design &amp; build</h3><p>Explored three directions on her real content, then built the chosen one on a shared design system.</p></li><li><b>4</b><h3>Validate &amp; iterate</h3><p>Measured the redesign against the old site on the same screens, and refined it round by round.</p></li></ol>
+</section>
+<section class="cs" id="research" aria-labelledby="research-h">
+  <p class="eyebrow"><span class="n">04</span> Research &amp; insights</p><h2 id="research-h" style="color:#D6336C">Mapping how a booker gets to “yes”</h2>
+<dl class="facts in"><div><dt>Methods</dt><dd>Heuristic review, content audit, journey mapping, measured walkthroughs</dd></div><div><dt>Devices</dt><dd>Desktop (1440px) and phone (390px)</dd></div><div><dt>Content audited</dt><dd>Bio, 3 YouTube sets, SoundCloud, 17 flyers, socials</dd></div><div><dt>Goal</dt><dd>More booking inquiries</dd></div></dl>
+<h3>The booker journey, and where the old site broke it</h3>
+<div class="scroll-x"><table class="jmap ctable" aria-label="Booker journey map: stages, goals, problems on the old site and opportunities"><thead><tr><th scope="col">Stage</th><th scope="col">Booker’s goal</th><th scope="col">On the old site</th><th scope="col">Opportunity</th></tr></thead><tbody><tr><th scope="row">1 · Arrive</th><td>Land from her Instagram or TikTok</td><td>Her name in large type on white, with no photos on the first screen</td><td>Lead with her real set photos</td></tr><tr><th scope="row">2 · Feel the vibe</th><td>See her play, see the crowd</td><td>The first photo sat below the fold, after the bio</td><td>Show the crowd and the decks immediately</td></tr><tr><th scope="row">3 · Hear her</th><td>Play a set or a mix</td><td>Sets were there, but the SoundCloud button was a plain square</td><td>Make listening an obvious, inviting action</td></tr><tr><th scope="row">4 · Trust her</th><td>Check she can carry a room</td><td>Her strongest numbers sat inside long bio paragraphs</td><td>Pull proof out where it’s seen</td></tr><tr><th scope="row">5 · Reach out</th><td>Contact her fast, from wherever they are</td><td>Book Reema was at the top only; mid-page, no way to book was on screen</td><td>Keep booking one click away on every scroll</td></tr></tbody></table></div>
+<div class="split"><figure class="fig "><img src="../assets/img/reema/before-laptop.webp" alt="The previous Sounds of Reema homepage: her name in large type on white, with two small square buttons" loading="lazy" decoding="async"></figure><div>
+<h3>Four insights</h3>
+<ul class="pts"><li><b>Her photos are the pitch,</b> but none were on the first screen.</li><li><b>The calls to action blended in:</b> 12px header links and plain square buttons.</li><li><b>Her proof was buried:</b> a 1,500+ crowd at How a Sunset Sounds and 300+ at her series Dey Here sat deep in her bio.</li><li><b>Booking disappeared on scroll:</b> the header didn’t stay, so mid-page there was no way to book on screen.</li></ul>
+</div></div>
+</section>
+<section class="cs" id="decisions" aria-labelledby="decisions-h">
+  <p class="eyebrow"><span class="n">05</span> Design decisions</p><h2 id="decisions-h" style="color:#D6336C">From insight to decision</h2>
+<h3>Three directions on her real content</h3>
+<figure class="fig "><img src="../assets/img/reema/directions.webp" alt="The three directions side by side: Scrapbook, After Dark and Sunset" loading="lazy" decoding="async"><figcaption>Scrapbook (taped polaroids on paper), After Dark (a night-club palette) and Sunset (a pink-to-orange stage glow), each built responsive on the same content. Scrapbook was chosen: it puts her real set photos at the center and feels personal without looking unprofessional.</figcaption></figure>
+<div class="i2d"><div class="i2d-row"><p class="i"><span>What the research showed</span>Her photos are the pitch.</p><span class="arrow" aria-hidden="true">→</span><p class="d"><span>What I designed</span>Taped polaroids of her sets frame “sounds of REEMA”, so the first screen shows the crowd, the decks and her before any copy.</p></div><div class="i2d-row"><p class="i"><span>What the research showed</span>The calls to action blended in.</p><span class="arrow" aria-hidden="true">→</span><p class="d"><span>What I designed</span>Header links at 17px bold, and chunky rounded Book Reema and SoundCloud buttons, 60px tall, in the hero and the header.</p></div><div class="i2d-row"><p class="i"><span>What the research showed</span>Her proof was buried.</p><span class="arrow" aria-hidden="true">→</span><p class="d"><span>What I designed</span>Three numbers from her bio, 1,500+, 300+ and 4 cities, pulled out as cards beside her story.</p></div><div class="i2d-row"><p class="i"><span>What the research showed</span>Booking disappeared on scroll.</p><span class="arrow" aria-hidden="true">→</span><p class="d"><span>What I designed</span>A header that stays on screen with a Book Reema button. Every Book button opens one pop-up with her email and a Copy email button.</p></div></div>
+<h3>Tradeoffs I weighed</h3>
+<div class="features"><div class="feat"><h3>Personality vs. credibility</h3><p>Pink is her brand, but a pink, playful Book button read as less serious. The Book button is solid black, and pink stays in accents like the tape and labels.</p></div><div class="feat"><h3>A form vs. her inbox</h3><p>A booking form looks thorough, but needs a server and would change how she works. Two actions match her real workflow: copy her email, or DM her.</p></div><div class="feat"><h3>Embedded players vs. links out</h3><p>Embedded YouTube players add weight and don’t play everywhere. Each set is a card that opens on YouTube, so it always works.</p></div></div>
+</section>
+<section class="cs" id="system" aria-labelledby="system-h">
+  <p class="eyebrow"><span class="n">05</span> Design decisions</p><h2 id="system-h" style="color:#D6336C">Thinking in systems</h2>
+<p>I built the site on one content model and a small design system, so every section and all three directions share the same parts. Reema’s content lives in one place; the components and the theme decide how it looks.</p>
+<ol class="flowx" aria-label="How the site is built: content, then components, then themes, then screens"><li><b>1</b><h3>Content</h3><p>Her bio, proof points, sets, 17 flyers and links, written once.</p></li><li><b>2</b><h3>Components</h3><p>Polaroid, buttons with states, proof card, booking pop-up, flyer strip.</p></li><li><b>3</b><h3>Themes</h3><p>Color and type tokens plus a hero layout. Each direction is a theme over the same content and components.</p></li><li><b>4</b><h3>Screens</h3><p>Responsive rules for phone, tablet and desktop, tested from 390px to 1920px.</p></li></ol>
+<figure class="fig "><img src="../assets/img/reema/components.webp" alt="The design system: color tokens, type, primary and secondary buttons with hover states, buttons on dark, the proof card, the polaroid and the booking pop-up" loading="lazy" decoding="async"><figcaption>The system: four color tokens, four type roles, and the components every section reuses.</figcaption></figure>
+<h3>Quality bar</h3>
+<ul class="pts"><li><b>Nothing scrolls sideways</b> – at any width from 390px to 1920px.</li><li><b>Larger tap targets:</b> primary buttons are 60px tall, up from 46px.</li><li><b>Motion respects settings:</b> the flyer strip stops for people who turn on reduced motion.</li><li><b>The pop-up behaves like a dialog:</b> it closes with Esc, the close button or a click outside, and Copy email falls back gracefully if copying is blocked.</li></ul>
+</section>
+<section class="cs" id="iterate" aria-labelledby="iterate-h">
+  <p class="eyebrow"><span class="n">05</span> Design decisions</p><h2 id="iterate-h" style="color:#D6336C">Refining it, round by round</h2>
+<p>I made each decision from side-by-side previews on desktop and phone, and changed whatever got in the way of booking.</p>
+<div class="ba"><article><h3>Looking bookable</h3><div class="ba-in"><p class="b"><span>Before</span>A Book button with a pink drop shadow: fun, but it read as less serious.</p><p class="a"><span>After</span>A solid black Book button that turns white with a black shadow on hover.</p></div></article><article><h3>Booking steps</h3><div class="ba-in"><p class="b"><span>Before</span>A booking form with seven fields at the bottom of the page.</p><p class="a"><span>After</span>Two actions that match how she takes bookings: copy her email, or DM her on Instagram.</p></div></article><article><h3>Past events</h3><div class="ba-in"><p class="b"><span>Before</span>Flyers too small to read the event names.</p><p class="a"><span>After</span>Flyers about 40% larger, chosen from a side-by-side comparison of two sizes.</p></div></article><article><h3>Room to breathe</h3><div class="ba-in"><p class="b"><span>Before</span>A photo crowded the “R” of her name.</p><p class="a"><span>After</span>Photos placed so her name stays clear at every width, with the strongest shot enlarged.</p></div></article></div>
+</section>
+<section class="cs" id="final" aria-labelledby="final-h">
+  <p class="eyebrow"><span class="n">06</span> Final experience</p><h2 id="final-h" style="color:#D6336C">The final experience</h2>
+<p>Try it yourself: the prototype is live, with her real photos, sets and flyers, and works on desktop and phone.</p>
+<p><a class="btn" href="reema-prototype/">View live prototype</a></p>
+<div class="split rev"><div><h3>Booking, one click away</h3><p>Her email in large type, a Copy email button that confirms with “Copied!”, and a way to open an email app. It’s the same pop-up from the header, the hero and the booking card.</p></div><figure class="fig "><img src="../assets/img/reema/popup-laptop.webp" alt="The booking pop-up on a laptop: her email address, with Copy email and Open email app buttons" loading="lazy" decoding="async"></figure></div>
+<div class="split"><div><figure class="fig "><img src="../assets/img/reema/phones.webp" alt="Before and after on a phone: the old type-only first screen, and the new collage with Book Reema and SoundCloud buttons" loading="lazy" decoding="async"></figure></div><div><h3>Built for the phone</h3><p>Many visits start from her socials on a phone. On mobile, her name and both buttons come first, and the Book button stays in the header as you scroll.</p></div></div>
+<figure class="fig "><img src="../assets/img/reema/sets.webp" alt="Watch the sets: three YouTube sets in polaroid frames, and a SoundCloud band" loading="lazy" decoding="async"><figcaption>Her three YouTube sets open on YouTube, with SoundCloud one tap away.</figcaption></figure>
+<figure class="fig "><img src="../assets/img/reema/past.webp" alt="Past events: event flyers as taped prints in a drifting strip" loading="lazy" decoding="async"><figcaption>Past events drift on their own and can be swiped or dragged.</figcaption></figure>
+<figure class="fig "><img src="../assets/img/reema/book.webp" alt="The booking card: Book Reema for your next event, with a white Copy email button and an outlined DM button" loading="lazy" decoding="async"><figcaption>The booking card: copy her email or DM her on Instagram.</figcaption></figure>
+</section>
+<section class="cs" id="outcomes" aria-labelledby="outcomes-h">
+  <p class="eyebrow"><span class="n">07</span> Outcomes &amp; reflection</p><h2 id="outcomes-h" style="color:#D6336C">Impact, and how I’ll measure it</h2>
+<h3>Measured on the same screens, old site vs. redesign</h3>
+<div class="outc"><div><b>0 → 4</b><span>photos on the first screen (desktop); 0 → 2 on a phone</span><em>Measured at 1440px and 390px</em></div><div><b>No → Yes</b><span>a Book button on screen when you’re mid-page</span><em>Header stays visible on scroll</em></div><div><b>+42%</b><span>header link size, 12px to 17px, regular to bold</span><em>Measured on desktop</em></div><div><b>46 → 60px</b><span>Book button height, a larger tap target</span><em>Measured at 1440px and 390px</em></div></div>
+<h3>How I’ll measure impact after launch</h3>
+<div class="scroll-x"><table class="jmap ctable" aria-label="Launch measurement plan: metrics, why they matter, how they are measured, and the baseline"><thead><tr><th scope="col">Metric</th><th scope="col">Why it matters</th><th scope="col">How it’s measured</th><th scope="col">Compared with</th></tr></thead><tbody><tr><th scope="row">Booking inquiries per month</th><td>The business goal</td><td>Emails and Instagram DMs that ask about a booking</td><td>The 3 months before launch</td></tr><tr><th scope="row">Booking actions per visit</th><td>Shows whether visitors move toward booking</td><td>Clicks on Book Reema, Copy email and DM, divided by visits</td><td>A baseline from the first weeks</td></tr><tr><th scope="row">Listening</th><td>A step toward booking</td><td>Clicks to SoundCloud and YouTube sets</td><td>A baseline from the first weeks</td></tr></tbody></table></div>
+<div class="split">
+  <div><h3>What I learned</h3><p>For a creative, the photos are the pitch, and the booking path is the product. Treating a personal site as a conversion problem, with a journey, measures and a system behind it, kept every decision tied to the goal instead of to taste.</p></div>
+  <div><h3>What I’d do next</h3><ul class="pts"><li><b>Interview bookers:</b> talk with promoters and venue bookers about how they choose a DJ, and test the site with them.</li><li><b>Launch and measure</b> – against the plan above, then iterate on whatever step loses the most people.</li><li><b>Hand it over</b> – on her current setup, where she updates links, flyers and gigs from one place.</li></ul></div>
+</div>
+</section>
+  </div>
+</div>
+<section class="others" aria-labelledby="others-h">
+  <h2 id="others-h" class="sec">More case studies</h2>
+  <p><a href="../projects/healthyhand.html">Healthy Hand</a><span aria-hidden="true"> / </span><a href="../projects/paraillel.html">Paraillel</a><span aria-hidden="true"> / </span><a href="../projects/cli.html">UT Health X CLI</a><span aria-hidden="true"> / </span><a href="../projects/helper-bees.html">The Helper Bees</a><span aria-hidden="true"> / </span><a href="https://ikejustis.github.io/geisinger-redesign/" target="_blank" rel="noopener">Geisinger</a><span aria-hidden="true"> / </span><a href="../projects/tandem.html">Tandem</a><span aria-hidden="true"> / </span><a href="../projects/tudum.html">Netflix Tudum Case Study</a></p>
+</section>
+</main>
+<footer class="foot">
+  <img src="../assets/img/signature.png" alt="Ikedi J. Nwogu" width="631" height="227">
+  <p><a class="foot-li" href="https://www.linkedin.com/in/ikedi-j-nwogu-963736201/" target="_blank" rel="noopener">LinkedIn</a></p>
+  <p>© <span id="yr">2026</span> Ikedi Nwogu. All rights reserved.</p>
+</footer>
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+/* Every page opens at the top: clicking a project, in the list or the dropdown, starts its case study
+   from the beginning. Links to a section (#…) and the browser's Back button keep their place. */
+(function () {
+  var entry = performance.getEntriesByType && performance.getEntriesByType('navigation')[0];
+  if (location.hash || (entry && entry.type !== 'navigate')) return;
+  /* Keep putting it back at the top while the page settles, until the visitor scrolls themselves. */
+  var moved = false;
+  ['wheel', 'touchstart', 'keydown'].forEach(function (t) { addEventListener(t, function () { moved = true; }, { passive: true, once: true }); });
+  function toTop() { if (!moved) window.scrollTo({ top: 0, left: 0, behavior: 'instant' }); }
+  toTop(); addEventListener('load', function () { toTop(); setTimeout(toTop, 150); setTimeout(toTop, 450); });
+})();
+/* The logo goes to the top of the home page. On the home page itself it glides back up. */
+(function () {
+  var logo = document.querySelector('.logo');
+  if (!logo) return;
+  logo.addEventListener('click', function (e) {
+    if (new URL(logo.href, location.href).pathname !== location.pathname) return;
+    e.preventDefault();
+    var still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: still ? 'instant' : 'smooth' });
+    if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+  });
+})();
+/* Product Design dropdown: opens on hover (desktop) and on tap or Enter;
+   Escape or a click elsewhere closes it. */
+(function () {
+  var dd = document.querySelector('.dd'), btn = dd && dd.querySelector('.dd-btn');
+  if (!btn) return;
+  function set(open) { dd.classList.toggle('open', open); btn.setAttribute('aria-expanded', open); }
+  btn.addEventListener('click', function () { set(!dd.classList.contains('open')); });
+  document.addEventListener('click', function (e) { if (!dd.contains(e.target)) set(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && dd.classList.contains('open')) { set(false); btn.focus(); } });
+})();
+/* Living sky parallax: each cloud layer moves with the mouse and the scroll by its depth. */
+(function () {
+  var layers = [].slice.call(document.querySelectorAll('.skyfx .layer'));
+  if (!layers.length || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var mx = 0, my = 0, queued = false;
+  function apply() {
+    queued = false;
+    layers.forEach(function (l) {
+      var d = +l.dataset.depth, top = l.parentNode.getBoundingClientRect().top;
+      l.style.transform = 'translate3d(' + (mx * d * 28) + 'px,' + (my * d * 16 + Math.min(0, top) * d * .35) + 'px,0)';
+    });
+  }
+  function queue() { if (!queued) { queued = true; requestAnimationFrame(apply); } }
+  addEventListener('pointermove', function (e) { mx = e.clientX / innerWidth - .5; my = e.clientY / innerHeight - .5; queue(); }, { passive: true });
+  addEventListener('scroll', queue, { passive: true });
+})();
+</script>
+<script>
+/* Launch film: starts muted; the button turns the score on and off. */
+(function () {
+  var v = document.getElementById('film'), b = document.querySelector('[data-snd]');
+  if (!v || !b) return;
+  b.addEventListener('click', function () {
+    v.muted = !v.muted; if (!v.muted) v.play();
+    b.setAttribute('aria-pressed', String(!v.muted)); b.querySelector('span').textContent = v.muted ? 'Sound on' : 'Sound off';
+  });
+})();
+/* Highlight the section in view in the side contents. */
+(function () {
+  var links = {}; document.querySelectorAll('.toc a').forEach(function (a) { links[a.getAttribute('href').slice(1)] = a; });
+  if (!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { Object.values(links).forEach(function (a) { a.classList.remove('on'); }); var a = links[e.target.id]; if (a) a.classList.add('on'); } }); }, { rootMargin: '-35% 0px -60% 0px' });
+  document.querySelectorAll('.cs').forEach(function (s) { io.observe(s); });
+})();
+</script>
+</body>
+</html>

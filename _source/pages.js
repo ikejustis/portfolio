@@ -37,7 +37,7 @@ for (const [k, t, url] of CASES) {
   const f = path.join(__dirname, 'projects', k + '.html');
   // Outside projects get a page that forwards there, so any old link to it still works.
   if (url) { fs.writeFileSync(f, `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>${esc(t)} · Ikedi J. Nwogu</title><meta http-equiv="refresh" content="0; url=${url}"><link rel="canonical" href="${url}"></head><body><p><a href="${url}">Open the ${esc(t)} project</a></p></body></html>\n`); continue; }
-  if (['healthyhand', 'paraillel', 'helper-bees', 'cli', 'tandem', 'tudum'].includes(k)) continue;   // full case studies (projects.js)
+  if (['healthyhand', 'paraillel', 'reema', 'helper-bees', 'cli', 'tandem', 'tudum'].includes(k)) continue;   // full case studies (projects.js)
   fs.writeFileSync(f, shell({ base: '../', current: k, title: t + ' · Ikedi J. Nwogu', description: t + ' case study by Ikedi J. Nwogu.', file: 'projects/' + k + '.html', body: soon('../', t) + moreCases({ base: '../', current: k }) }));
 }
 /* Animation & Motion Design. Each piece: title, year, tools, text, and its media (a video, or a still until the video arrives). */
