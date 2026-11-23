@@ -30,6 +30,7 @@ ${glance([
   <article><h3>CLI Engage · educators &amp; families</h3><p>Needed to find training, resources and progress information quickly, often with limited time and varied technical skill.</p></article>
   <article><h3>TECPDS · professionals, clinicians &amp; researchers</h3><p>Early-childhood professionals needed to keep their training and records in order. Clinicians and researchers needed workflows that match how studies run, with data that stays accurate and trustworthy.</p></article>
 </div>
+<div class="screens"><figure class="fig"><img src="${IMG}institute-home.webp" alt="The public Children’s Learning Institute homepage" width="1600" height="866" loading="lazy" decoding="async"><figcaption>The Children’s Learning Institute at UTHealth Houston, which runs both platforms</figcaption></figure></div>
 <div class="twofig screens">
   <figure class="fig"><img src="${IMG}engage-home.webp" alt="The public CLI Engage homepage" width="1200" height="657" loading="lazy" decoding="async"><figcaption>CLI Engage, for educators and families</figcaption></figure>
   <figure class="fig"><img src="${IMG}tecpds-home.webp" alt="The public TECPDS homepage" width="1200" height="647" loading="lazy" decoding="async"><figcaption>TECPDS, the Texas Early Childhood Professional Development System</figcaption></figure>
