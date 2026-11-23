@@ -15,7 +15,7 @@ module.exports = (B, k) => {
     <p class="lede">At UTHealth Houston’s Children’s Learning Institute, I led UX strategy, research and design across education and clinical research platforms. I simplified complex workflows, set consistent UX standards, improved accessibility, and helped cross-functional teams deliver more intuitive experiences for educators, clinicians, researchers and families.</p>
     <p><a class="btn" href="https://public.cliengage.org/" target="_blank" rel="noopener">View Site</a></p>
   </div>
-  <div class="ch-pic"><img src="${IMG}laptop.webp" alt="The Children’s Learning Institute website on a laptop" width="1800" height="1251"></div>
+  <div class="ch-pic"><img src="${IMG}hero-platforms.webp" alt="CLI Engage and TECPDS, the two platforms I designed for, in browser windows" width="1800" height="1251"></div>
 </section>
 ${facts([['Role', 'Senior UX Designer – UX Researcher'], ['Timeline', 'Jun 2024 – May 2025'], ['Platforms', 'CLI Engage and TECPDS'], ['Team', 'Several product teams, with PMs, researchers and engineers']])}
 ${glance([
