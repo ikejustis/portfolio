@@ -467,3 +467,4 @@ img.mv { height: auto; }
 .toc-ph:first-child { margin-top: 0; }
 .toc-ph span { color: var(--c); margin-right: 6px; }
 .toc a { padding-left: 22px; }
+.twofig.screens .fig img { border: 1px solid var(--line); }
