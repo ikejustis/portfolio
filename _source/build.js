@@ -27,7 +27,7 @@ const PROJECTS = [
   { key: 'reema', tag: 'Music & nightlife', color: '#D6336C', title: 'Sounds of Reema: A Website Built to Get a DJ Booked', meta: ['Product Designer', 'Music & nightlife', 'Website redesign'],
     body: ['Reema, an LA DJ, reached out to get more bookings. I audited her site, mapped how bookers reach her, and redesigned her site: her set photos lead, her proof sits up front, and booking takes one click.'],
     chips: ['Booking in 1 click', 'Photo-led hero', 'Responsive site'],
-    img: 'reema.webp', alt: 'The redesigned Sounds of Reema site on a laptop', links: [['View Project', 'projects/reema.html'], ['View Site', 'projects/reema-site/']] },
+    img: 'reema.webp', alt: 'The redesigned Sounds of Reema site on a laptop', links: [['View Project', 'projects/reema.html'], ['View Site', 'https://soundsofreema.com/']] },
   { key: 'helperbees', tag: 'Healthcare', color: '#C08A00', title: 'Supporting Senior Independence Through In-Home Care Design',
     meta: ['Lead Product Designer', 'In-home care', 'Mobile app'],
     body: ['A personalized, accessible recommendation experience that connects older adults and their families with trusted aging-in-place products, bridging payer goals with the real needs of seniors.'],
