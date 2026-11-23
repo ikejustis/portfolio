@@ -17,6 +17,7 @@ module.exports = (B, k) => {
     <img class="ch-logo sm" src="${IMG}logo.webp" alt="Paraillel" width="321" height="101">
     <h1 class="long" style="color:#0F4C9E">Building an AI-powered learning platform that gives teachers more time to teach.</h1>
     <p class="lede">Paraillel was an early-stage ed-tech startup making personalized learning more accessible to students in underserved Detroit school districts. I helped build the platform from 0 to 1, leading product design and a team of four designers I mentored, while partnering with educators, product and engineering on AI-powered classroom tools that cut administrative work and supported more personalized learning.</p>
+    <p><a class="btn" href="https://paraillel.com/" target="_blank" rel="noopener">View Site</a></p>
   </div>
   <div class="ch-pic"><video src="${B}assets/video/paraillel.mp4" poster="${B}assets/img/paraillel.webp" autoplay muted loop playsinline preload="metadata" aria-label="Walkthrough of the Paraillel teacher dashboard and assignments"></video></div>
 </section>
